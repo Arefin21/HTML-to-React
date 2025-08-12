@@ -38,7 +38,7 @@ class Header extends Component {
                                                             <li><Link to="/">Home</Link></li>
                                                             <li><Link to ="/about">About</Link></li>
                                                             <li><Link to ="/service">Services</Link></li>
-                                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                                            <li><Link to ="/portfolio">Portfolio</Link></li>
                                                             <li><a href="#">Page</a>
                                                                 <ul className="submenu">
                                                                     <li><a href="blog.html">Blog</a></li>
@@ -71,6 +71,7 @@ class Header extends Component {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About/>}/>
                         <Route path="/service" element={<Service/>}/>
+                        <Route path="/portfolio" element={<Portfolio/>}/>
                     </Routes>
 
                 </div>
