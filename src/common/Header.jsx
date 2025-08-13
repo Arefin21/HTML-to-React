@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "../components/Home";
 import About from "../components/About";
 import Service from "../components/Service";
+import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
+import Blog from "../components/Blog";
+import BlogDetails from "../components/BlogDetails";
 
 class Header extends Component {
     render() {
@@ -41,13 +45,13 @@ class Header extends Component {
                                                             <li><Link to ="/portfolio">Portfolio</Link></li>
                                                             <li><a href="#">Page</a>
                                                                 <ul className="submenu">
-                                                                    <li><a href="blog.html">Blog</a></li>
-                                                                    <li><a href="blog_details.html">Blog Details</a></li>
+                                                                    <li><Link to ="/blog">Blog</Link></li>
+                                                                    <li><Link to ="/blogdetails">Blog Details</Link></li>
                                                                     <li><a href="elements.html">Element</a></li>
                                                                     <li><a href="portfolio_details.html">Portfolio Details</a></li>
                                                                 </ul>
                                                             </li>
-                                                            <li><a href="contact.html">Contact</a></li>
+                                                            <li><Link to ="/contact">Contact</Link></li>
                                                         </ul>
                                                     </nav>
                                                 </div>
@@ -72,6 +76,9 @@ class Header extends Component {
                         <Route path="/about" element={<About/>}/>
                         <Route path="/service" element={<Service/>}/>
                         <Route path="/portfolio" element={<Portfolio/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/blog" element={<Blog/>}/>
+                        <Route path="/blogdetails" element={<BlogDetails/>}/>
                     </Routes>
 
                 </div>
